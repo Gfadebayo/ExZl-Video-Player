@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#87E44B</color>
+    <color name="colorPrimaryDark">#418304</color>
+    <color name="colorAccent">#000207</color>
+    <color name="test">#32DFD3</color>
+    <color name="colorHighlight">#8FDDDDD7</color>
+    <color name="colorNavBar">#1BBBBB</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorAccentLight">#79F1FA1D</color>
+    <color name="colorPlayerTint">#F2FFFF0B</color>
+    <color name="colorPlayerControlBack">#5C000000</color>
+</resources>

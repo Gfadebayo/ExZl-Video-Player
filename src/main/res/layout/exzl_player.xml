@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frame_player"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorPlayerControlBack"
+    android:paddingTop="4dp"
+    android:paddingBottom="4dp">
+
+    <TextView
+        android:id="@+id/text_time_start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="00:00:00"
+        android:textColor="@color/colorPlayerTint"
+        app:layout_constraintBottom_toBottomOf="@id/seek_progress"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/seek_progress"
+        tools:ignore="HardcodedText" />
+
+    <SeekBar
+        android:id="@+id/seek_progress"
+        style="@android:style/Widget.Material.Light.SeekBar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:indeterminate="false"
+        android:max="10"
+        android:progressTint="#D8E91313"
+        android:secondaryProgressTint="#780E94"
+        android:thumbTint="@color/colorPlayerTint"
+        app:layout_constraintBottom_toTopOf="@id/frame_controls"
+        app:layout_constraintEnd_toStartOf="@+id/text_time_end"
+        app:layout_constraintStart_toEndOf="@id/text_time_start" />
+
+    <TextView
+        android:id="@+id/text_time_end"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:paddingTop="8dp"
+        android:text="00:00:00"
+        android:textColor="@color/colorPlayerTint"
+        app:layout_constraintBottom_toBottomOf="@id/seek_progress"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/seek_progress"
+        tools:ignore="HardcodedText" />
+
+    <LinearLayout
+        android:id="@+id/frame_controls"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageButton
+            android:id="@+id/image_previous"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#00C42E2E"
+            android:contentDescription="Previous"
+            android:src="@drawable/ic_skip_previous_black_24dp"
+            android:tint="@color/colorPlayerTint"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/image_play"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/image_play" />
+
+        <ImageButton
+            android:id="@+id/image_play"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#008F7777"
+            android:contentDescription="@string/play"
+            android:src="@drawable/ic_play_arrow_black_24dp"
+            android:tint="@color/colorPlayerTint"
+            app:layout_constraintBottom_toBottomOf="parent"
+            tools:layout_editor_absoluteX="269dp" />
+
+        <ImageButton
+            android:id="@+id/image_next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#00B11D1D"
+            android:contentDescription="@string/next"
+            android:src="@drawable/ic_skip_next_black_24dp"
+            android:tint="@color/colorPlayerTint"
+            app:layout_constraintEnd_toStartOf="@+id/image_loop"
+            tools:layout_editor_absoluteY="688dp" />
+
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/image_loop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="24dp"
+        android:backgroundTint="#00FFFFFF"
+        android:contentDescription="@string/loop"
+        android:src="@drawable/ic_loop_black_24dp"
+        android:tint="@color/colorPlayerTint"
+        app:layout_constraintBottom_toBottomOf="@id/frame_controls"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/frame_controls" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
