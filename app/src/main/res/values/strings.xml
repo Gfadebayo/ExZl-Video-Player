@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">ExZL Video Player</string>
+    <string name="video">Videos</string>
+    <string name="audio">Audios</string>
+    <string name="files">Files</string>
+    <string name="wait">Please Wait</string>
+    <string name="rename">Rename</string>
+    <string name="delete">Delete</string>
+    <string name="change_thumb">Change Thumbnail</string>
+    <string name="download">Download</string>
+    <string name="grid">Grid</string>
+    <string name="sort">Sort</string>
+    <string name="by_title">By Title</string>
+    <string name="by_date">By Date</string>
+    <string name="by_size">By Size</string>
+    <string name="by_duration">By Duration</string>
+    <string name="ascending">Ascending</string>
+    <string name="search_hint">Search local file or Enter a Url</string>
+    <string name="file_name">File name</string>
+    <string name="decrease">Decrease</string>
+    <string name="increase">Increase</string>
+    <string name="play">Play</string>
+    <string name="next">Next</string>
+    <string name="loop">Loop</string>
+    <string name="previous">Previous</string>
+    <string name="new_name">Enter a new name</string>
+    <string name="cancel">Cancel</string>
+    <string name="rename_done">Successfully renamed the File</string>
+    <string name="rename_fail">Failed to rename the File</string>
+    <string name="new_time">Enter the desired time</string>
+</resources>

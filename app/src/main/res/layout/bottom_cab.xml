@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    android:layout_marginStart="8dp"
+    android:layout_marginEnd="8dp"
+    app:cardCornerRadius="4dp"
+    android:padding="8dp"
+    tools:parentTag="com.google.android.material.card.MaterialCardView">
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:contentInsetStart="8dp"
+        app:contentInsetEnd="8dp">
+
+        <androidx.appcompat.widget.ActionMenuView
+            android:id="@+id/bottom_cab_action"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </com.google.android.material.appbar.MaterialToolbar>
+</merge>

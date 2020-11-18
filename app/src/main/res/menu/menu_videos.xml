@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/action_search"
+        android:icon="@drawable/ic_search_black_24dp"
+        android:title="Search"
+        app:actionViewClass="android.widget.SearchView"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/action_layout"
+        android:icon="@drawable/ic_view_module_black_24dp"
+        android:title="@string/grid"
+        app:showAsAction="always" />
+    <item
+        android:icon="@drawable/ic_sort_black_24dp"
+        android:title="@string/sort"
+        app:showAsAction="ifRoom">
+        <menu>
+            <group
+                android:checkableBehavior="single">
+                <item
+
+                    android:id="@+id/action_title"
+                    android:title="@string/by_title" />
+                <item
+                    android:id="@+id/action_date"
+                    android:title="@string/by_date" />
+                <item
+                    android:id="@+id/action_size"
+                    android:title="@string/by_size" />
+                <item
+                    android:id="@+id/action_duration"
+                    android:title="@string/by_duration" />
+            </group>
+
+            <item
+                android:id="@+id/action_ascending"
+                android:checkable="true"
+                android:title="@string/ascending" />
+        </menu>
+    </item>
+
+    <item
+        android:id="@+id/action_download"
+        android:title="@string/download" />
+</menu>

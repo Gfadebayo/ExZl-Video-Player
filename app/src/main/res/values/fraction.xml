@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <fraction name="startAlpha">0</fraction>
+    <fraction name="endAlpha">0.88</fraction>
+</resources>

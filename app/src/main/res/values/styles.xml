@@ -1,0 +1,33 @@
+<resources>
+
+    <style name="Theme.Navigation.Button" parent="Widget.AppCompat.Toolbar.Button.Navigation">
+        <item name="android:tint">?attr/headerColor</item>
+    </style>
+
+    <style name="Theme.Toolbar" parent="Widget.MaterialComponents.Toolbar">
+        <item name="titleTextColor">?attr/headerColor</item>
+        <item name="android:background">?attr/colorPrimary</item>
+    </style>
+
+    <style name="Theme.TAB" parent="Widget.MaterialComponents.TabLayout">
+        <item name="tabTextColor">?attr/headerColor</item>
+        <item name="tabRippleColor">@color/colorPlayerControlBack</item>
+        <item name="android:background">?attr/colorPrimary</item>
+        <item name="tabIndicatorColor">?attr/headerColor</item>
+    </style>
+
+    <style name="Theme.ExtendedFloatingButton" parent="Widget.MaterialComponents.ExtendedFloatingActionButton.Icon">
+        <item name="iconTint">@android:color/white</item>
+        <item name="android:textAlignment">viewStart</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="backgroundTint">@color/colorAccent</item>
+    </style>
+
+    <style name="Theme.Menu" parent="Widget.AppCompat.ActionButton.Overflow">
+        <item name="android:tint">?attr/headerColor</item>
+    </style>
+
+    <style name="Theme.SearchView" parent="Widget.AppCompat.Light.SearchView">
+        <item name="android:tint">?attr/headerColor</item>
+    </style>
+</resources>

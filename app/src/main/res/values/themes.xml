@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="headerColor">@android:color/white</item>
+        <item name="android:textSize">15sp</item>
+        <item name="windowActionModeOverlay">true</item>
+        <item name="actionModeStyle">@style/Widget.AppCompat.ActionMode</item>
+        <item name="actionModeBackground">?attr/colorPrimary</item>
+        <item name="actionBarTheme">@style/ThemeOverlay.MaterialComponents.Dark.ActionBar</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar" parent="AppTheme">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+
+    <style name="AppTheme.Base">
+        <item name="toolbarStyle">@style/Theme.Toolbar</item>
+        <item name="toolbarNavigationButtonStyle">@style/Theme.Navigation.Button</item>
+        <item name="extendedFloatingActionButtonStyle">@style/Theme.ExtendedFloatingButton</item>
+        <item name="actionOverflowButtonStyle">@style/Theme.Menu</item>
+        <item name="searchViewStyle">@style/Theme.SearchView</item>
+        <item name="tabStyle">@style/Theme.TAB</item>
+    </style>
+
+
+
+    <style name="AppTheme.NoActionBar.Player">
+<!--        <item name="android:background">@android:color/transparent</item>-->
+    </style>
+
+</resources>
